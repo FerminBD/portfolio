@@ -1,0 +1,45 @@
+.form-container{
+    width:50%;
+    color:var(--black);
+    padding:10px;
+    border:2.5px solid var(--black);
+    border-radius:10px;
+    box-shadow: 20px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+.message{
+    height: 100px;
+        
+}
+
+input{
+    margin-top: 3px;
+    margin-bottom:25px;
+    border: 1px solid var(--black);
+    border-radius:10px;
+    width: 100%;
+    padding: 15px;
+    
+}
+
+textarea{
+    margin-top: 3px;
+    margin-bottom:25px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    width: 100%;
+    background-color: var(--white);
+}
+
+button{
+    border:none;
+    width:20%;
+    height:25px;
+    border-radius:5px;
+    background-color: var(--background);
+}
+
+button:hover{
+    box-shadow: inset 1000px 0 0 0 var(--red);
+}
+

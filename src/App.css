@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@300;400;700&display=swap");
+
+:root{
+  --black: rgb(32, 22, 22);
+  --red: rgb(241, 80, 80);
+  --background: rgb(207, 204, 204);
+  --white: rgba(255, 254, 254, 0.932);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sono", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  height: 100vh;
+  background-color:rgb(255, 253, 245);
+  overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.page-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 130px);
 }
 
-.App-link {
-  color: #61dafb;
+
+.title {
+  animation-name: title-move;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
-@keyframes App-logo-spin {
+.title h1 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.title p{
+  margin-top: 20px;
+}
+
+.description {
+  margin-top: 45px;
+  animation-name: des-move;
+  animation-duration: 1s; 
+  animation-fill-mode: forwards;
+}
+
+.description h3{
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+
+
+/* Key Frames */
+
+@keyframes title-move {
   from {
-    transform: rotate(0deg);
+    /* transform: scale(0) rotate(0deg); */
+    transform: translateX(-1000px);
+
   }
   to {
-    transform: rotate(360deg);
+    /* transform: scale(2) rotate(720deg); */
+    transform: translateX(0);
+
   }
+}
+
+
+@keyframes des-move {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  
 }
